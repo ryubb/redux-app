@@ -12,7 +12,7 @@ export function todos(state={
     case "REMOVE_TO_DO":
       return Object.assign({}, state, {
         list: state.list.filter(todo => {
-          if(action.todo != todo) {
+          if(action.todo !== todo) {
             console.log("true");
             return true;
           } else {
